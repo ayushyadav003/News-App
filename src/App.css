@@ -1,0 +1,9 @@
+body{
+    font-family: sans-serif;    
+    background-color: #EBF2F7;
+}
+
+.App{
+    display: inline-flex;
+    margin: 1em;
+}
