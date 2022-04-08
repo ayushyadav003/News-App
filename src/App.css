@@ -1,9 +1,14 @@
-body{
-    font-family: sans-serif;    
+body{    
     background-color: #EBF2F7;
 }
 
 .App{
-    display: inline-flex;
-    margin: 1em;
+    /* display: inline-flex; */
+    margin: 2em;
+}
+@media screen and (max-width:730px){
+    .App{
+        /* display: inline-flex; */
+        margin: 0;
+    }
 }
