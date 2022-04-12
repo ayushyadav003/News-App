@@ -4,7 +4,7 @@ body{
 
 .App{
     /* display: inline-flex; */
-    margin: 2em;
+    margin: 1em;
 }
 @media screen and (max-width:730px){
     .App{
