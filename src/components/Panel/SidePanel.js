@@ -4,7 +4,7 @@ import SearchBar from './searchbar/SearchBar'
 import './SidePanel.css'
 import View from './view/View'
 
-export default function SidePanel({ style, setStyle }) {
+export default function SidePanel() {
   return (
     <div className="SidePanelContainer">
         <div>
@@ -12,7 +12,7 @@ export default function SidePanel({ style, setStyle }) {
                 <p style={{fontWeight:"600"}}>Hi Reader</p>
                 <p>Here's your news</p>
             </div>    
-            <View style={style} setStyle={setStyle} />
+            <View/>
             <Feedback />
             <SearchBar />
         </div>

@@ -1,11 +1,12 @@
 .SidePanelContainer{
     position: fixed;
     background-color: #EBF2F7;
-    padding: 2em;
+    padding: 1em;
     width: fit-content;
-    height: auto;
+    height: 95vh;
     border-radius: 20px;
     box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.75);
+
 }
 
 .content{
@@ -14,7 +15,7 @@
     width: 13em;
     height: fit-content;
     padding: 1em;
-    margin: 2em 1em;
+    margin: 1em 1em;
     border-radius: 5px;
     box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.75);
 }

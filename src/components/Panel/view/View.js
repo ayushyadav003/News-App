@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ArticleIcon from '@mui/icons-material/Article';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import { Context } from '../../../context/Context';
 
 
-export default function View({ style, setStyle }) {
+export default function View() {
+
+  const{setStyle}= useContext(Context)
 
   const changeStyles = () =>{
     setStyle(true)

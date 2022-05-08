@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useContext} from 'react'
+import { Context } from '../../../context/Context';
 import './Searchbar.css'
 
 function SearchBar() {
+
+  const{setSearch, search} = useContext(Context);
+
+  const onSearchChange = (e) =>{
+    setSearch(e.target.value);
+  }
+
+  console.log(search);
+
   return (
     <div>
         <div className="Card">
@@ -14,7 +24,7 @@ function SearchBar() {
                     <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                 </div>
                 <div className="InputContainer">
-                <input placeholder="Search a news..." />
+                <input onChange={(e)=>onSearchChange(e)} placeholder="Search a news..." type="text"/>
                 </div>
             </div>
             </div>

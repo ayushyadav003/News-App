@@ -1,19 +1,18 @@
-import React,{useState} from 'react'
+import React from 'react';
 import './App.css';
 import NewsList from './components/news list/NewsList';
 import SidePanel from './components/Panel/SidePanel'
+import ContextProvider from './context/Context';
 
 
 function App() {
-
-  const[style,setStyle] = useState(true);
-  const[search, setSearch] = useState('')
-
   return (
+    <ContextProvider>
     <div className="App">
-      <SidePanel style={style} setStyle={setStyle} />
-      <NewsList style={style} />
+      <SidePanel />
+      <NewsList />
     </div>
+    </ContextProvider>
   );
 }
 
