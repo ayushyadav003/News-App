@@ -10,8 +10,6 @@ function SearchBar() {
     setSearch(e.target.value);
   }
 
-  console.log(search);
-
   return (
     <div>
         <div className="Card">
